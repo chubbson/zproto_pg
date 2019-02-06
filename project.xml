@@ -1,0 +1,17 @@
+<project name= "zproto_pg"
+         script = "zproject.gsl">
+    <target name = "cmake" />
+    <target name = "autotools" />
+
+    <use project = "czmq" />
+    <main name = "hello" private = "1" />
+
+    <class name = "hello_server" state = "stable">Hello Server implementation</class>
+    <class name = "hello_msg" private = "1">Message held by server</class>
+    <class name = "hello_client" state = "stable">Hello client API</class>
+
+    <model name = "mlm_proto" />
+    <model name = "mlm_client" />
+    <model name = "mlm_server" />
+
+</project>
